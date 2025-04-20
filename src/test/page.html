@@ -7,8 +7,19 @@
     <title>Test Component</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/test/component.ts"></script>
-    <test-component></test-component>
+    <div class="flex h-screen flex-col text-slate-950">
+      <script type="module" src="/src/header/component.ts"></script>
+      <script type="module" src="/src/footer/component.ts"></script>
+      <script type="module" src="/src/test/component.ts"></script>
+
+      <app-header></app-header>
+
+      <main class="flex-1 overflow-y-auto bg-slate-50 px-4 py-16 sm:px-16 lg:px-32">
+        <test-component></test-component>
+        <h1 class="text-3xl font-bold text-blue-300 underline">Hello world!</h1>
+      </main>
+
+      <app-footer></app-footer>
+    </div>
   </body>
 </html>
