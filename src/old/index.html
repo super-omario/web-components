@@ -9,21 +9,13 @@
   <body>
     <script type="module" src="/src/header/component.ts"></script>
     <script type="module" src="/src/footer/component.ts"></script>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="main.ts"></script>
 
     <div class="flex h-screen flex-col text-slate-950">
       <app-header></app-header>
 
       <main class="flex-1 overflow-y-auto bg-slate-50 px-4 py-16 sm:px-16 lg:px-32">
-        <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Components List:</h2>
-        <ul class="max-w-md list-inside list-disc space-y-1 text-gray-500 dark:text-gray-400">
-          <li>
-            <a href="src/test/index.html">App Test</a>
-          </li>
-          <li>
-            <a href="src/timer/index.html">App Timer</a>
-          </li>
-        </ul>
+        <div id="app"></div>
       </main>
 
       <app-footer></app-footer>
