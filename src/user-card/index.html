@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Card Component</title>
+  </head>
+  <body>
+    <div class="flex h-screen flex-col text-slate-950">
+      <script type="module" src="/src/header/component.ts"></script>
+      <script type="module" src="/src/footer/component.ts"></script>
+      <script type="module" src="index.ts"></script>
+
+      <app-header></app-header>
+
+      <main class="flex-1 overflow-y-auto bg-slate-50 px-4 py-16 sm:px-16 lg:px-32">
+        <h3>Text outside the web component</h3>
+
+        <user-card first-name="Omario" last-name="Super"></user-card>
+      </main>
+
+      <app-footer></app-footer>
+    </div>
+  </body>
+</html>
