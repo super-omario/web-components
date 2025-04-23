@@ -12,6 +12,7 @@ export default class UserCard extends HTMLElement {
           color: blue;
         }
       </style>
+
       <h3 class="my-4">Text inside the web component</h3>
       <p>${this.getAttribute('first-name')} ${this.getAttribute('last-name')}</p>
     `;
